@@ -33,7 +33,7 @@
             <nav class="main-navigation">
               <ul class="main-navigation__list site-list">
                   <li class="site-list__item">
-                    <a>Главная</a>
+                    <a href="index.html">Главная</a>
                   </li>
                   <li class="site-list__item site-list__item--active">
                     <a href="catalog.html">Каталог продукции</a>
@@ -52,7 +52,7 @@
         <h1 class="page-main__title">Подбор программы</h1>
         <p class="page-main__description">Заполните анкету и мы подберем  программу питания для вашего кота</p>
     </div>
-    <form action="/data" method="POST" class="page-main__form main-form">
+    <form action="#" method="POST" class="page-main__form main-form">
         <section class="main-form__block1">
             <div class="main-form__data">
                 <div class="main-form__wrapper">
@@ -72,15 +72,15 @@
             </div>
             <div class="main-form__radio">
                 <div class="main-form__wrapper">
-                    <div>
+                    <div class="main-form__radio-item">
                         <input type="radio" name="programm" value="похудение" id="thin">
                         <label for="thin">Похудение</label>
                     </div>
-                    <div>
+                    <div class="main-form__radio-item">
                         <input type="radio" name="programm" value="набор массы" id="fat">
                         <label for="fat">Набор массы</label>
                     </div>
-                    <div>
+                    <div class="main-form__radio-item">
                         <input type="radio" name="programm" value="нужен совет" id="help">
                         <label for="help">Не знаю (нужен ваш совет)</label>
                     </div>
@@ -104,29 +104,48 @@
             </div>
           </div>
         </div>
-        <h2 class="main-form__title">Комментарий</h2>
-        <div class="main-form__comment">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="wrapper">
+          <h2 class="main-form__title">Комментарий</h2>
+          <div class="main-form__comment">
+            <textarea class="main-form__comment-text" name="" id="" cols="30" rows="10" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+          </div>
         </div>
-        <h2 class="main-form__title">Дополнительно</h2>
-        <div class="main-form__additionally">
-            <label>
-                <input type="checkbox" name="additionally">Сахарозаменитель
-            </label>
-            <label>
-                <input type="checkbox" name="additionally">Питьевая вода
-            </label>
-            <label>
-                <input type="checkbox" name="additionally">Молоко
-            </label>
-            <label>
-                <input type="checkbox" name="additionally">Витамины
-            </label>
+        <div class="wrapper">
+          <h2 class="main-form__title">Дополнительно</h2>
+          <div class="main-form__additionally additionally">
+            <div class="additionally__item">
+              <input type="checkbox" name="additionally" id="sugar" checked>
+              <label for="sugar">
+                Сахарозаменитель
+              </label>
+            </div>
+            <div class="additionally__item">
+              <input type="checkbox" name="additionally" id="water">
+              <label for="water">
+                Питьевая вода
+              </label>
+            </div>
+            <div class="additionally__item">
+              <input type="checkbox" name="additionally" id="milk">
+              <label for="milk">
+                Молоко
+              </label>
+            </div>
+            <div class="additionally__item">
+              <input type="checkbox" name="additionally" id="vitamins">
+              <label for="vitamins">
+                Витамины
+              </label>
+            </div>
+          </div>
         </div>
-        <button type="submit">Отправить заявку</button>
-        <p><sup>*</sup> - Обязательные поля</p>
+        <div class="wrapper">
+          <div class="main-form__submit">
+            <button class="main-form__button" type="submit">Отправить заявку</button>
+            <p class="main-form__note"><sup>*</sup> — Обязательные поля</p>
+          </div>
+        </div>
     </form>
-
     <section class="location"> 
         <h2 class="visually-hidden">Как до нас добраться!</h2>
         <div class="wrapper">
